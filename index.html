@@ -1,1 +1,52 @@
-<h1> Hello!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+<div>
+    <header>
+        <div class="text-center">
+            <h1 class="emily-header-logo text-dark"> CS-416 Narrative Visualization: COVID-19 case fatality rate analyze </h1>
+        </div>
+    </header>
+
+    <div class="top-nav">
+        <a class="active" href="index.html">Index</a>
+        <a href="USView.html">United States</a>
+        <a href="UKView.html">United Kingdom</a>
+        <a href="CNView.html">China</a>
+        <a href="FreeView.html">Free Explore</a>
+    </div>
+
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+        <div class="px-0">
+            <p class="lead my-3"> Effective February 25, 2022, CDC (Centers for Disease Control and Prevention) does not require wearing of masks on public transportation and hubs [1]. Starting from then,
+                many tech companies in US gradually changing their work from home policy and encourage more people return to the office. When heard about these news, I'm pretty curious about what make those organizations/companies
+                come up with this decision. After a period of thinking, I came up with several hypothesis: 1. The number of new confirmed people is in control due to increasing coverage of vaccine. 2. Improving medical technology allows us to cure
+                patients faster than before. 3. While the COVID may have stronger contagion after several variation, the mortality risk is actually decreasing. Note that usually there'll be multiple factors for institution/company to make a statement. However, I'm
+                most interested in hypothesis 3 and the course I'm taken (CS-416) just give me the opportunity to visualize and verify my hypothesis.
+
+                <br><br>To verify my hypothesis, I searched the corresponding COVID data from <a href="https://ourworldindata.org/covid-cases">OWID</a> and visualize
+                the new confirmed cases and number of deaths in United States along with time. The visualization and conclusion will be put in following pages. After that, to explore if the similar situations is also happening in other country, I picked up two sample countries
+                from Europe and Asian region separately in the following scenes. At last, I build a scene that give you the chance to explore data with any other country as you select.<br>
+            </p>
+        </div>
+    </div>
+    <div class="center-body">
+    <a href="USView.html">
+        <button role="button" class="nav-button"> Click here to check the United States data first </button>
+    </a>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <br>
+    <h5> References </h5>
+    <p> [1] https://www.cdc.gov/quarantine/masks/face-masks-public-transportation.html </p>
+    <br>
+</footer>
+</body>
+</html>

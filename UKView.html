@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js" integrity="sha512-iBAeBWWWFb8HqSBcrqcz98iIpuVH1la39dEYHtyQ/pGpeCQTQVvLJOWAuhv2Q7JSHp9k7hWA7sGxU3hHJe+tFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="Controller/visController.js"></script>
+<script src="Controller/UKAnnotationController.js"></script>
+<link rel="stylesheet" href="css/stylesheet.css">
+<header>
+    <div class="text-center">
+        <h1 class="emily-header-logo text-dark"> CS-416 Narrative Visualization: COVID-19 case fatality analyze </h1>
+    </div>
+</header>
+
+<div class="top-nav">
+    <a href="index.html">Index</a>
+    <a href="USView.html">United States</a>
+    <a class="active" href="UKView.html">United Kingdom</a>
+    <a href="CNView.html">China</a>
+    <a href="FreeView.html">Free Explore</a>
+</div>
+
+<div>
+    <svg class="vis-graph" id="vis" width="800" height="800"></svg>
+    <div class="description">
+        For UK, the pattern is quite similar to what we saw in US: case fatality rate is around 0.01-0.03 most of the time (in early 2020 it reaches 0.2 limit as low confirmed cases). There's a peak confirmed near the end of 2021 due to Omicron[1]. And then the case fatality rate
+        drops to 0.001-0.004. Similarly, UK government also withdrawn the law to wear face covering in public spaces[2].<br>
+        <a href="CNView.html" class="nav-button-country">
+            <button role="button" class="nav-button"> Next: China </button>
+        </a>
+    </div>
+    <script>
+        visInit("United Kingdom");
+        createAnnotation();
+    </script>
+</div>
+<footer class="country-footer">
+    <br>
+    <h5>References </h5>
+    <p>[1] https://www.gov.uk/government/news/first-uk-cases-of-omicron-variant-identified<br>
+    [2] https://www.gov.uk/government/publications/face-coverings-when-to-wear-one-and-how-to-make-your-own/face-coverings-when-to-wear-one-and-how-to-make-your-own#:~:text=prevent%20the%20spread.-,Summary,you%20do%20not%20normally%20meet.</P>
+</footer>
+</html>

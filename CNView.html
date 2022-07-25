@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js" integrity="sha512-iBAeBWWWFb8HqSBcrqcz98iIpuVH1la39dEYHtyQ/pGpeCQTQVvLJOWAuhv2Q7JSHp9k7hWA7sGxU3hHJe+tFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="Controller/visController.js"></script>
+<script src="Controller/CNAnnotationController.js"></script>
+<link rel="stylesheet" href="css/stylesheet.css">
+<header>
+    <div class="text-center">
+        <h1 class="emily-header-logo text-dark"> CS-416 Narrative Visualization: COVID-19 case fatality analyze </h1>
+    </div>
+</header>
+
+<div class="top-nav">
+    <a href="index.html">Index</a>
+    <a href="USView.html">United States</a>
+    <a href="UKView.html">United Kingdom</a>
+    <a class="active" href="CNView.html">China</a>
+    <a href="FreeView.html">Free Explore</a>
+</div>
+<div>
+    <svg class="vis-graph" id="vis" width="800" height="800"></svg>
+    <div class="description">
+        China is an outlier in COVID data due to its restrict policy. China may not be the typical country that represents the situation for Asia, while considering its great population and impact I think it's still a
+        good data point to analyze. The case fatality rate at early 2020 may not be accurate as the confirmed cases are too small, while before February 2020, the rate is still in the range of 0.1-0.3. According to the data,
+        China did a pretty good job in controlling new confirmed cases during 2020-2022 and the death is always 0. There's also a confirmation spike in early 2022 due to Omicron and holiday. Note that the peak in China is several
+        months later than the peak in other country like US and UK. One of the reason is Chinese don't celebrate Christmas, and instead their major holiday is Chinese New Year, which is on February 1st in 2022. In addition, we can notice that the case fatality
+        rate after the peak in 2022 in China is also 0.004-0.001, which again verified our hypothesis.<br>
+        <a href="FreeView.html" class="nav-button-country nav-button-country-cn">
+            <button role="button" class="nav-button"> Next: explore other regions </button>
+        </a>
+    </div>
+    <script>
+        visInit("China");
+        createAnnotation();
+    </script>
+</div>
+<footer class="country-footer">
+</footer>
+</html>

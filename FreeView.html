@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js" integrity="sha512-iBAeBWWWFb8HqSBcrqcz98iIpuVH1la39dEYHtyQ/pGpeCQTQVvLJOWAuhv2Q7JSHp9k7hWA7sGxU3hHJe+tFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="Controller/freeViewController.js"></script>
+<script src="Controller/visController.js"></script>
+<link rel="stylesheet" href="css/stylesheet.css">
+<header>
+    <div class="text-center">
+        <h1 class="emily-header-logo text-dark"> CS-416 Narrative Visualization: COVID-19 case fatality analyze </h1>
+    </div>
+</header>
+
+<div class="top-nav">
+    <a href="index.html">Index</a>
+    <a href="USView.html">United States</a>
+    <a href="UKView.html">United Kingdom</a>
+    <a href="CNView.html">China</a>
+    <a class="active" href="FreeView.html">Free Explore</a>
+</div>
+
+<div>
+    <svg class="vis-graph" id="vis" width="800" height="800"></svg>
+    <div class="description">
+        Please feel free to explore other countries data by using the dropdown below!<br><br><br><br>
+        <div class="center-body">
+        <select name="selected-country" id="country-dropdown" onchange="selectCountry()">
+        </select>
+        </div>
+    </div>
+    <script>
+        freeViewInit();
+        visInit("Afghanistan");
+    </script>
+</div>
+<footer class="country-footer">
+</footer>
+</html>

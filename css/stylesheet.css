@@ -1,0 +1,118 @@
+.top-nav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.top-nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.top-nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.top-nav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.bar {
+    fill: #5096b4;
+}
+
+.focusText {
+    border:1px solid #c9c9c9;
+    border-radius: 2px;
+    padding: 7px;
+}
+
+.nav-button {
+    background-color: rgba(51, 51, 51, 0.05);
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    /*margin: 0;*/
+    padding: 10px 12px;
+    text-align: center;
+    transition: all 200ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top:60px;
+}
+
+.nav-button:hover {
+    background-color: #f7fafa;
+}
+
+.nav-button:focus {
+    border-color: #292f33;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline: 0;
+}
+
+.nav-button-country {
+    position: fixed;
+    margin-top: 70px;
+    top: 240px;
+    right: 440px;
+}
+
+.nav-button-country-cn {
+    margin-top: 130px;
+}
+
+.description {
+    margin-top: 40px;
+    width: 50%;
+    float: left;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.country-footer {
+    position: fixed;
+    right: 20px;
+    width: 900px;
+    bottom: 0;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.1rem;
+}
+
+.annotation.annotation-peak path {
+    fill-opacity: 0;
+}
+
+.annotation-bottom {
+    position: absolute;
+}
+
+.vis-graph {
+    width: 50%;
+    float: left;
+}
+
+.center-body {
+    text-align: center;
+}
