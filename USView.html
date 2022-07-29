@@ -18,21 +18,24 @@
     <a href="CNView.html">China</a>
     <a href="FreeView.html">Free Explore</a>
 </div>
-<div>
+<div class="content-body">
     <svg class="vis-graph" id="vis" width="800" height="800"></svg>
     <div class="description">
         As you can see, until end of 2021, daily number of deaths is still kind of proportional to the new confirmed cases (with rate varies between 0.01 to 0.03, you can move the cursor on graph to view the ratio at one single day). However, beginning 2022, though there's a sharp
         decrease at the first several months, which seems to be the bounceback of 2021 Christmas peak, new confirmed cases starting to increase from around April. While the death rate just keep decreasing, and the case fatality ratio decreases to even ~0.003 from then.
         Actually this situation just corresponds to the timeline when [2] Omicron variant reaches United States. And it confirmed my hypothesis that, the mortality risk of COVID is decreasing recently!<br>
+        <div class="center-body">
         <a href="UKView.html" class="nav-button-country">
             <button role="button" class="nav-button"> Next: United Kingdom </button>
         </a>
+        </div>
     </div>
 <script>
     visInit("United States");
     createAnnotation();
 </script>
 </div>
+
 <footer class="country-footer">
     <br>
     <h5> References </h5>

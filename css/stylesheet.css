@@ -66,12 +66,12 @@
     outline: 0;
 }
 
-.nav-button-country {
-    position: fixed;
-    margin-top: 70px;
-    top: 240px;
-    right: 440px;
-}
+/*.nav-button-country {*/
+/*    position: fixed;*/
+/*    margin-top: 70px;*/
+/*    top: 240px;*/
+/*    right: 440px;*/
+/*}*/
 
 .nav-button-country-cn {
     margin-top: 130px;
@@ -83,15 +83,18 @@
     float: left;
 }
 
+.content-body {
+    width: 100%;
+    float: left;
+}
+
 .footer {
     position: fixed;
     bottom: 0;
 }
 
 .country-footer {
-    right: 20px;
-    width: 900px;
-    bottom: 0;
+    float: left;
 }
 
 body {
